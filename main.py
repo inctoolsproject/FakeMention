@@ -55,5 +55,5 @@ def FakeContact(to, tag, mids=[]): #DONE
             if mid == mids[-1]:
                 result += ''
         if result:
-            client.sendMessage2(to, result, {'PRDID': '350d37d6-bfc9-44cb-a0d1-cf17ae3657db','PRDTYPE': 'THEME','MSGTPL': '5','MENTION': json.dumps({'MENTIONEES': mentionees})}, 9)
+            client.sendMessage(to, result, {'PRDID': '350d37d6-bfc9-44cb-a0d1-cf17ae3657db','PRDTYPE': 'THEME','MSGTPL': '5','MENTION': json.dumps({'MENTIONEES': mentionees})}, 9)
         result = ''
